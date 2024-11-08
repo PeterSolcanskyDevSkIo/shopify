@@ -25,11 +25,20 @@
 }
 
 body {
-  @apply border-primary/10 bg-contrast text-primary/90 antialiased;
+  @apply  antialiased;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100%;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 html {
   scroll-padding-top: 10rem;
+  height: 100%;
 }
 
 model-viewer::part(default-progress-mask) {

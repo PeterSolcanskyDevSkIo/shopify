@@ -1,22 +1,22 @@
 <!doctype html>
-<html class="no-js h-full" lang="{{ request.locale.iso_code }}">
+<html lang="{{ request.locale.iso_code }}">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="theme-color" content="">
+    <meta name="theme-color" content="#fbe805">
     <link rel="canonical" href="{{ canonical_url }}">
 
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
     {%- endif -%}
 
-    {%- unless settings.type_body_font.system? -%}
-      <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
-    {%- endunless -%}
-    {%- unless settings.type_header_font.system? -%}
-      <link rel="preload" as="font" href="{{ settings.type_header_font | font_url }}" type="font/woff2" crossorigin>
-    {%- endunless -%}
+    {% comment %}{%- unless settings.type_body_font.system? -%}{% endcomment %}
+      {% comment %}<link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>{% endcomment %}
+    {% comment %}{%- endunless -%}{% endcomment %}
+    {% comment %}{%- unless settings.type_header_font.system? -%}{% endcomment %}
+      {% comment %}<link rel="preload" as="font" href="{{ settings.type_header_font | font_url }}" type="font/woff2" crossorigin>{% endcomment %}
+    {% comment %}{%- endunless -%}{% endcomment %}
 
     <title>
       {{ page_title }}
@@ -59,8 +59,8 @@
     {% endstyle %}
 
     {%- liquid
-      render 'vite-tag' with 'theme.css', preload_stylesheet: true
-      render 'vite-tag' with 'theme.js'
+      render 'vite-tag' with 'style.css', preload_stylesheet: true
+      render 'vite-tag' with 'app.js'
       if request.page_type contains 'customers/'
         render 'vite-tag' with 'customers.js'
       endif
@@ -73,7 +73,7 @@
     </script>
   </head>
 
-  <body class="grid min-h-full grid-cols-[100%] grid-rows-[auto_1fr_auto] font-body font-body-weight">
+  <body class="">
     <a
       href="#MainContent"
       class="button sr-only bg-primary text-contrast focus:not-sr-only focus:absolute focus:z-50 focus:px-6 focus:py-3"

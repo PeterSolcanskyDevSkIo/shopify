@@ -1,0 +1,16 @@
+@import 'tailwindcss/base';
+@import '@/styles/base/base.css';
+@import 'tailwindcss/components';
+@import '@/styles/base/components';
+@import 'tailwindcss/utilities';
+@import '@/styles/base/utilities';
+
+/* Page*/
+@import '@/styles/base/reboot.css';
+
+/* Page*/
+@import '@/styles/page/header.css';
+@import '@/styles/page/footer.css';
+
+/* Components*/
+@import '@/styles/sections/page-hero.css';

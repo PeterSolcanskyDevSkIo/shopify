@@ -1,10 +1,5 @@
-{%- liquid
-  assign container_class = 'bg-contrast/80 text-primary'
-  assign input_class = 'focus:border-primary/20'
--%}
-
 <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} client:idle>
-  <header role="banner" class="{{ container_class }} h-nav w-full leading-none backdrop-blur-lg px-4 flex justify-between items-center gap-4 md:px-8 lg:gap-8 lg:px-12 lg:py-8">
+  <header role="banner" class="header">
     <div class="flex items-center justify-start w-full gap-4 lg:hidden">
       {%- if section.settings.menu != blank -%}
         <header-drawer client:media="(max-width: 1023px)">
@@ -57,7 +52,16 @@
         <h1 class="w-full lg:w-auto">
       {%- endif %}
           <a href="{{ routes.root_url }}" class="flex items-center self-stretch leading-[3rem] justify-center flex-grow w-full h-full font-heading font-heading-weight md:leading-[4rem] lg:inline lg:w-auto lg:h-auto lg:leading-none">
-            {{ shop.name }}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 213.79" width="820" height="214" aria-label="devsk company logo" class="icon icon-main-logo" fill="#FFF"><script xmlns=""/>
+              <path d="M78.18,127.89c-29.26,0-45.14-8.63-45.14-30.87s15.87-31.06,45.14-31.06,45.33,8.63,45.33,31.06-16.07,30.87-45.33,30.87ZM123.51,0V58.1c-12.24-12.85-31.94-19.56-56.23-19.56C31.13,38.54,.15,53.88,.15,97.02s30.98,58.29,67.13,58.29c24.29,0,43.99-6.71,56.23-19.56v17.64h32.7V0h-32.7Z"/>
+              <path d="M248.59,63.46c20.66,0,36.72,4.41,42.27,20.32h-85.49c5.16-15.91,20.84-20.32,43.22-20.32Zm-1.72,65.19c-21.8,0-39.02-5.94-42.65-23.97h121.64c0-51.38-34.23-66.15-77.08-66.15-45.71,0-78.03,16.87-78.03,58.48s33.28,58.29,76.12,58.29,69.62-13.61,77.08-42.37h-32.51c-8.23,11.5-22,15.72-44.57,15.72Z"/>
+              <polygon points="444.39 40.45 400.4 130.19 356.22 40.45 319.88 40.45 376.88 153.39 423.54 153.39 480.73 40.45 444.39 40.45"/>
+              <path d="M479.18,113.7c0,36.05,40.16,41.61,83.58,41.61s72.1-5.56,72.1-37.39c0-30.1-30.03-31.25-74.02-34.51-38.82-2.88-44.75-4.03-44.75-11.12,0-6.52,8.8-8.82,39.78-8.82s42.27,2.3,42.27,11.7h32.9c0-31.06-30.79-36.62-73.25-36.62-40.16,0-74.59,5.56-74.59,35.09,0,27.23,24.29,31.06,73.82,33.94,39.59,2.49,44.94,3.07,44.94,11.7s-5.74,11.12-41.12,11.12-48.96-4.6-48.96-16.68h-32.7v-.02Z"/>
+              <polygon points="820 40.45 764.15 40.45 682.11 91.26 682.11 39.79 649.4 39.79 649.4 153.39 682.11 153.39 682.11 127.31 720.55 104.11 774.48 153.39 820 153.39 746.94 86.66 820 40.45"/>
+              <rect y="185.79" width="820" height="28"/>
+              <script xmlns=""/>
+            </svg>
+            <span class="sr-only">{{ shop.name }}</span>
           </a>
       {%- if request.page_type == 'index' -%}
         </h1>
