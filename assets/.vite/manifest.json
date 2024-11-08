@@ -1,33 +1,16 @@
 {
-  "_modulepreload-polyfill.BCYanipZ.min.js": {
-    "file": "modulepreload-polyfill.BCYanipZ.min.js"
+  "_preload-helper.D2JdQ4rh.min.js": {
+    "file": "preload-helper.D2JdQ4rh.min.js"
   },
   "_utils.yhNUuzph.min.js": {
     "file": "utils.yhNUuzph.min.js"
   },
-  "frontend/entrypoints/customers.js": {
-    "file": "customers.0-uxUFsu.min.js",
-    "src": "frontend/entrypoints/customers.js",
+  "frontend/entrypoints/app.js": {
+    "file": "app.rXdw-YDH.min.js",
+    "src": "frontend/entrypoints/app.js",
     "isEntry": true,
     "imports": [
-      "_modulepreload-polyfill.BCYanipZ.min.js"
-    ],
-    "dynamicImports": [
-      "frontend/lib/shopify_common.js",
-      "frontend/lib/customer-address.js"
-    ]
-  },
-  "frontend/entrypoints/theme.css": {
-    "file": "theme.DsGt0OfJ.min.css",
-    "src": "frontend/entrypoints/theme.css",
-    "isEntry": true
-  },
-  "frontend/entrypoints/theme.js": {
-    "file": "theme.Cfke23E1.min.js",
-    "src": "frontend/entrypoints/theme.js",
-    "isEntry": true,
-    "imports": [
-      "_modulepreload-polyfill.BCYanipZ.min.js"
+      "_preload-helper.D2JdQ4rh.min.js"
     ],
     "dynamicImports": [
       "frontend/islands/cart-drawer-items.js",
@@ -48,34 +31,51 @@
       "frontend/islands/variant-selects.js"
     ]
   },
+  "frontend/entrypoints/customers.js": {
+    "file": "customers.DQ6cOmYv.min.js",
+    "src": "frontend/entrypoints/customers.js",
+    "isEntry": true,
+    "imports": [
+      "_preload-helper.D2JdQ4rh.min.js"
+    ],
+    "dynamicImports": [
+      "frontend/lib/shopify_common.js",
+      "frontend/lib/customer-address.js"
+    ]
+  },
+  "frontend/entrypoints/style.css": {
+    "file": "style.M0jf634G.min.css",
+    "src": "frontend/entrypoints/style.css",
+    "isEntry": true
+  },
   "frontend/islands/cart-drawer-items.js": {
-    "file": "cart-drawer-items.DwKBss8_.min.js",
+    "file": "cart-drawer-items.BOpah2hI.min.js",
     "src": "frontend/islands/cart-drawer-items.js",
     "isDynamicEntry": true,
     "imports": [
       "frontend/islands/cart-items.js",
       "_utils.yhNUuzph.min.js",
-      "frontend/entrypoints/theme.js",
-      "_modulepreload-polyfill.BCYanipZ.min.js"
+      "frontend/entrypoints/app.js",
+      "_preload-helper.D2JdQ4rh.min.js"
     ]
   },
   "frontend/islands/cart-drawer.js": {
-    "file": "cart-drawer.BztpLx3Q.min.js",
+    "file": "cart-drawer.BEllOYBK.min.js",
     "src": "frontend/islands/cart-drawer.js",
     "isDynamicEntry": true,
     "imports": [
-      "frontend/entrypoints/theme.js",
-      "_modulepreload-polyfill.BCYanipZ.min.js"
+      "frontend/entrypoints/app.js",
+      "_preload-helper.D2JdQ4rh.min.js"
     ]
   },
   "frontend/islands/cart-items.js": {
-    "file": "cart-items.DvqQXJpo.min.js",
+    "file": "cart-items.BFY_hhED.min.js",
     "src": "frontend/islands/cart-items.js",
     "isDynamicEntry": true,
     "imports": [
       "_utils.yhNUuzph.min.js",
-      "frontend/entrypoints/theme.js",
-      "_modulepreload-polyfill.BCYanipZ.min.js"
+      "frontend/entrypoints/app.js",
+      "_preload-helper.D2JdQ4rh.min.js"
     ]
   },
   "frontend/islands/cart-note.js": {
@@ -97,22 +97,22 @@
     "isDynamicEntry": true
   },
   "frontend/islands/details-modal.js": {
-    "file": "details-modal.tZvsYdLo.min.js",
+    "file": "details-modal.BDWV5eNg.min.js",
     "src": "frontend/islands/details-modal.js",
     "isDynamicEntry": true,
     "imports": [
-      "frontend/entrypoints/theme.js",
-      "_modulepreload-polyfill.BCYanipZ.min.js"
+      "frontend/entrypoints/app.js",
+      "_preload-helper.D2JdQ4rh.min.js"
     ]
   },
   "frontend/islands/header-drawer.js": {
-    "file": "header-drawer.CMoonS-f.min.js",
+    "file": "header-drawer.BOZoL0oc.min.js",
     "src": "frontend/islands/header-drawer.js",
     "isDynamicEntry": true,
     "imports": [
-      "frontend/entrypoints/theme.js",
+      "frontend/entrypoints/app.js",
       "frontend/islands/details-modal.js",
-      "_modulepreload-polyfill.BCYanipZ.min.js"
+      "_preload-helper.D2JdQ4rh.min.js"
     ]
   },
   "frontend/islands/localization-form.js": {
@@ -121,13 +121,13 @@
     "isDynamicEntry": true
   },
   "frontend/islands/password-modal.js": {
-    "file": "password-modal.Bkz2iZwY.min.js",
+    "file": "password-modal.TLPgj4a6.min.js",
     "src": "frontend/islands/password-modal.js",
     "isDynamicEntry": true,
     "imports": [
       "frontend/islands/details-modal.js",
-      "frontend/entrypoints/theme.js",
-      "_modulepreload-polyfill.BCYanipZ.min.js"
+      "frontend/entrypoints/app.js",
+      "_preload-helper.D2JdQ4rh.min.js"
     ]
   },
   "frontend/islands/product-form.js": {
